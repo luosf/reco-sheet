@@ -9,7 +9,7 @@ from replaceimgTone import replaceImgTone
 from noteTranslate import noteTranslate
 im=Image.open(r'c:\Users\luoshengfeng\Desktop\L\jianpu\a.png')
 img_gray=im.convert('L')
-img_array_rgb=np.array(im.convert('RGB'))
+img_array_rgb=np.array(im.convert('RGB'))#RBG
 im.close()
 
 array_imo=np.array(img_gray)
