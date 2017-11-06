@@ -7,7 +7,7 @@ import scipy.io as so
 from PIL import Image
 from replaceimgTone import replaceImgTone
 from noteTranslate import noteTranslate
-im=Image.open(r'c:\Users\luoshengfeng\Desktop\L\jianpu\a.png')
+im=Image.open(r'd:\Files\qupu\我要你A.jpg')
 img_gray=im.convert('L')
 img_array_rgb=np.array(im.convert('RGB'))#RBG
 im.close()
@@ -29,7 +29,7 @@ letters, notes, box_locs_,box_notes=getLeter.getLetterLoc(array_img,templates)
 """
 翻译
 """
-toneOri='C'
+toneOri='A'
 toneOut='C'
 letters_,notes_=noteTranslate(letters,notes,toneOri,toneOut)
 #letters_ 1,2,3,4
